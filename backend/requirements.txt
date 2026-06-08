@@ -1,0 +1,20 @@
+# Веб-сервер
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+
+# Конфигурация (Pydantic v2)
+pydantic-settings>=2.0.0
+email-validator>=2.1.0
+
+# База данных (async SQLAlchemy + PostgreSQL)
+sqlalchemy[asyncio]>=2.0.0
+asyncpg>=0.30.0
+alembic>=1.14.0
+
+# Панель администратора
+sqladmin>=0.20.0
+
+# Аутентификация и безопасность
+PyJWT[crypto]>=2.9.0
+python-jose[cryptography]>=3.3.0
+bcrypt>=4.1.0
