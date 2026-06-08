@@ -1,0 +1,24 @@
+# Автоматически приводить все текстовые файлы к Unix-формату (LF) при коммите
+* text=auto eol=lf
+
+# Явно указываем, что файлы кода и конфигураций — это текст
+*.py text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.sh text eol=lf
+
+# Конфигурационные файлы Docker и CI/CD
+Dockerfile text eol=lf
+.dockerignore text eol=lf
+.gitignore text eol=lf
+.cursorrules text eol=lf
+
+# Бинарные файлы (картинки, базы данных) Git не должен трогать
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.db binary
